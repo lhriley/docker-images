@@ -14,15 +14,15 @@ LABEL org.freenas.interactive="true" \
               \"descr\": \"FreeIPA data\"       \
           },              \
           {               \
-              \"name\": \"/var/log/journal",       \
+              \"name\": \"/var/log/journal\",       \
               \"descr\": \"FreeIPA logs\"       \
           },              \
           {               \
-              \"name\": \"/run",       \
+              \"name\": \"/run\",       \
               \"descr\": \"FreeIPA run\"       \
           },              \
           {               \
-              \"name\": \"/tmp",       \
+              \"name\": \"/tmp\",       \
               \"descr\": \"FreeIPA tmp\"       \
           }               \
       ]"
