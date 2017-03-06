@@ -1,5 +1,6 @@
 FROM freeipa/freeipa-server:latest
-LABEL org.freenas.interactive="true" \
+LABEL org.freenas.interactive="false" \
+      org.freenas.privileged="true" \
       org.freenas.version="0.1.0" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \

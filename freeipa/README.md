@@ -23,6 +23,21 @@ This container exposes the following ports (see: https://access.redhat.com/docum
 * `NTP 123 UDP`
 * `7389 9443 9444 9445 TCP`
 
+You must set the `Advanced -> Hostname` to a valid FQDN or FreeIPA will refuse to start.
+
+### Setup
+
+By default, the `ipa-server-install` command is interactive. However, you can put a `ipa-server-install-options` file with command line parameters to append to the `ipa-server-install` command into the directory mounted as `/data`.
+
+`ipa-server-install-options` example:
+
+```
+--realm=<EXAMPLE.TEST>
+--ds-password=<The-directory-server-password>
+--admin-password=<The-admin-password>
+```
+
+For more details see: https://hub.docker.com/r/freeipa/freeipa-server/
 
 ## Upgrading
 
@@ -33,3 +48,4 @@ This container exposes the following ports (see: https://access.redhat.com/docum
 * https://www.freeipa.org/page/Documentation
 * https://www.freeipa.org/page/Docker
 * https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Linux_Domain_Identity_Authentication_and_Policy_Guide/index.html
+* https://hub.docker.com/r/freeipa/freeipa-server/
