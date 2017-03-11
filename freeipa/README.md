@@ -32,12 +32,17 @@ By default, the `ipa-server-install` command is interactive. However, you can pu
 `ipa-server-install-options` example:
 
 ```
+-U
+--domain=<domain.test>
 --realm=<EXAMPLE.TEST>
 --ds-password=<The-directory-server-password>
 --admin-password=<The-admin-password>
 ```
 
 For more details see: https://hub.docker.com/r/freeipa/freeipa-server/
+
+**If you're having trouble** tail `<FreeIPA Dataset>/data/var/log/ipaserver-install.log` for more information.
+
 
 ## Upgrading
 
