@@ -1,4 +1,4 @@
-FROM freeipa/freeipa-server:latest
+FROM freeipa/freeipa-server:centos-7
 LABEL org.freenas.interactive="false" \
       org.freenas.privileged="true" \
       org.freenas.version="0.1.0" \
